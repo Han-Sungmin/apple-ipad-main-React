@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/apple-ipad-main-React/static/css/main.1abbfd53.css",
-    "main.js": "/apple-ipad-main-React/static/js/main.72154bbc.js",
+    "main.js": "/apple-ipad-main-React/static/js/main.e29be30d.js",
     "static/media/sprite_covers.png": "/apple-ipad-main-React/static/media/sprite_covers.5c18372b1353759d4c0a.png",
     "static/media/sprite_neural.png": "/apple-ipad-main-React/static/media/sprite_neural.8342f293d6df917bbbcd.png",
     "static/media/sprite_true_tone.png": "/apple-ipad-main-React/static/media/sprite_true_tone.69de6fe271cb68f97b09.png",
@@ -37,10 +37,10 @@
     "static/media/header_bag.svg": "/apple-ipad-main-React/static/media/header_bag.f51a2a575970bd78bf4b.svg",
     "static/media/path_div.svg": "/apple-ipad-main-React/static/media/path_div.e8d71eca55fce20ca016.svg",
     "main.1abbfd53.css.map": "/apple-ipad-main-React/static/css/main.1abbfd53.css.map",
-    "main.72154bbc.js.map": "/apple-ipad-main-React/static/js/main.72154bbc.js.map"
+    "main.e29be30d.js.map": "/apple-ipad-main-React/static/js/main.e29be30d.js.map"
   },
   "entrypoints": [
     "static/css/main.1abbfd53.css",
-    "static/js/main.72154bbc.js"
+    "static/js/main.e29be30d.js"
   ]
 }

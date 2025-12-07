@@ -1,11 +1,12 @@
 import React from 'react'
+import { getImagePath } from '../utils/imagePath'
 
 function Environment() {
   return (
     <section className="environment">
       <div className="whitebox">
         <div className="inner">
-          <img className="icon" src="/images/environment_icon.png" alt="Environment Icon" />
+          <img className="icon" src={getImagePath("/images/environment_icon.png")} alt="Environment Icon" />
           <h1>환경</h1>
           <p>
             Apple은 제품의 라이프 사이클 전반에 걸쳐 우리의 환경 발자국에 대한 책임을 다합니다.<br />모든 Apple 제품과 포장재에 100% 재활용 및 재생 가능 소재만이 사용되는 그날을 위해

@@ -1,4 +1,5 @@
 import React from 'react'
+import { getImagePath } from '../utils/imagePath'
 
 function Privacy() {
   return (
@@ -16,7 +17,7 @@ function Privacy() {
         </div>
         <div className="figures">
           <figure>
-            <img src="/images/privacy.jpg" alt="Safari에 표시" />
+            <img src={getImagePath("/images/privacy.jpg")} alt="Safari에 표시" />
             <figcaption className="bgtext">
               <div className="caption-apple-id">Apple로 로그인</div>
               <div className="caption-touch-id">지문으로 로그인하기</div>

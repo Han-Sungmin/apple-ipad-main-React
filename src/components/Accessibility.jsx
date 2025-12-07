@@ -1,4 +1,5 @@
 import React from 'react'
+import { getImagePath } from '../utils/imagePath'
 
 function Accessibility() {
   return (
@@ -14,7 +15,7 @@ function Accessibility() {
         </div>
         <div className="figures">
           <figure>
-            <img src="/images/accessibility.jpg" alt="FaceTime 앱으로 4명이 수어로 영상 통화" />
+            <img src={getImagePath("/images/accessibility.jpg")} alt="FaceTime 앱으로 4명이 수어로 영상 통화" />
           </figure>
         </div>
       </div>

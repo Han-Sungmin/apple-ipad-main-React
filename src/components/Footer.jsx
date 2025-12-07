@@ -1,5 +1,6 @@
 import React from 'react'
 import navigations from '../data/navigations'
+import { getImagePath } from '../utils/imagePath'
 
 function Footer() {
   const currentYear = new Date().getFullYear()
@@ -9,7 +10,7 @@ function Footer() {
       <div className="inner">
         <div className="buy-info">
           <div>
-            <img className="icon" src="/images/buy-info-box.svg" alt="무료 익일 배송 Icon" />
+            <img className="icon" src={getImagePath("/images/buy-info-box.svg")} alt="무료 익일 배송 Icon" />
             <h3>업무일 기준 무료 익일 배송</h3>
             <p>오후 3시 이전에 주문된<br />
               재고 보유 제품에 한합니다.
@@ -17,7 +18,7 @@ function Footer() {
             <a href="javascript:void(0)" className="link">더 알아보기</a>
           </div>
           <div>
-            <img className="icon" src="/images/buy-info-won.svg" alt="금융 혜택 Icon" />
+            <img className="icon" src={getImagePath("/images/buy-info-won.svg")} alt="금융 혜택 Icon" />
             <h3>금융 혜택</h3>
             <p>
               무이자 할부를 통해 Apple 제품을<br />
@@ -26,7 +27,7 @@ function Footer() {
             <a href="javascript:void(0)" className="link">더 알아보기</a>
           </div>
           <div>
-            <img className="icon" src="/images/buy-info-engrave.svg" alt="각인 Icon" />
+            <img className="icon" src={getImagePath("/images/buy-info-engrave.svg")} alt="각인 Icon" />
             <h3>진정 자신만의 것으로</h3>
             <p>
               자신의 이름이나 개성 있는 문구를<br />

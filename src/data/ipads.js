@@ -1,3 +1,4 @@
+// 이미지 경로는 컴포넌트에서 getImagePath로 처리됩니다
 export default [
   {
     thumbnail: '/images/compare_ipad_pro.png',

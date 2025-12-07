@@ -1,5 +1,6 @@
 import React from 'react'
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver'
+import { getImagePath } from '../utils/imagePath'
 
 function Info({ icon, children }) {
   const elementRef = useIntersectionObserver()
@@ -20,7 +21,7 @@ function Display() {
           <h1 className="bgtext">빛나는 아이디어에 걸맞는 디스플레이</h1>
           <div className="figures">
             <figure>
-              <img src="/images/display_notes.jpg" alt="iPad의 Goodnotes 5 앱에서 편집 중인 손글씨 필기" />
+              <img src={getImagePath("/images/display_notes.jpg")} alt="iPad의 Goodnotes 5 앱에서 편집 중인 손글씨 필기" />
               <figcaption className="bgtext">노트 필기는 GOODNOTES 5로</figcaption>
             </figure>
           </div>
@@ -28,7 +29,7 @@ function Display() {
         <div className="shareplay feature">
           <div className="figures">
             <figure>
-              <img src="/images/display_shareplay.png" alt="SharePlay 기능으로 영상을 함께 즐기는 모습" />
+              <img src={getImagePath("/images/display_shareplay.png")} alt="SharePlay 기능으로 영상을 함께 즐기는 모습" />
               <figcaption className="bgtext">함께 보고 함께 즐기고</figcaption>
             </figure>
           </div>

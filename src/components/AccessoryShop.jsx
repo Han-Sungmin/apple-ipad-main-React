@@ -1,4 +1,5 @@
 import React from 'react'
+import { getImagePath } from '../utils/imagePath'
 
 function AccessoryShop() {
   return (
@@ -11,7 +12,7 @@ function AccessoryShop() {
             케이스, 커버, Apple Pencil, AirPods 등 다양한 액세서리를 만나보세요.
           </p>
           <a href="javascript:void(0)" className="link">iPad 액세서리 쇼핑하기</a>
-          <img src="/images/ipad_accessories.jpg" alt="다양한 액세서리 이미지" />
+          <img src={getImagePath("/images/ipad_accessories.jpg")} alt="다양한 액세서리 이미지" />
         </div>
       </div>
     </section>

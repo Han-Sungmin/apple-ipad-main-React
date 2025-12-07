@@ -1,5 +1,6 @@
 import React from 'react'
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver'
+import { getImagePath } from '../utils/imagePath'
 
 function Info({ icon, children }) {
   const elementRef = useIntersectionObserver()
@@ -20,7 +21,7 @@ function Wireless() {
           <h1 className="bgtext">선이 없다는 건 한계가 없다는 것.</h1>
           <div className="figures">
             <figure>
-              <img src="/images/wireless_facetime.jpg" alt="19명이 참여중인 FaceTime 영상 통화" />
+              <img src={getImagePath("/images/wireless_facetime.jpg")} alt="19명이 참여중인 FaceTime 영상 통화" />
               <figcaption className="bgtext">FACETIME으로 소통하고</figcaption>
             </figure>
           </div>
@@ -40,7 +41,7 @@ function Wireless() {
           </div>
           <div className="figures">
             <figure>
-              <img src="/images/wireless_files.png" alt="파일, iCloud Drive 선택 화면" />
+              <img src={getImagePath("/images/wireless_files.png")} alt="파일, iCloud Drive 선택 화면" />
               <figcaption className="bgtext">모든 파일 확인을 이동 중에도</figcaption>
             </figure>
           </div>

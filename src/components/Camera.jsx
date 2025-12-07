@@ -1,6 +1,7 @@
 import React from 'react'
 import { useVideo } from '../hooks/useVideo'
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver'
+import { getImagePath } from '../utils/imagePath'
 
 function Info({ icon, children }) {
   const elementRef = useIntersectionObserver()
@@ -29,10 +30,10 @@ function Camera() {
           </div>
           <div className="figures">
             <figure>
-              <img src="/images/camera_hardware.png" alt="iPad의 영상 통화 중 센터 스테이지 기능이 사용되는 예시" />
+              <img src={getImagePath("/images/camera_hardware.png")} alt="iPad의 영상 통화 중 센터 스테이지 기능이 사용되는 예시" />
               <video 
                 ref={videoRef}
-                src="/videos/center-stage.mp4" 
+                src={`${process.env.PUBLIC_URL}/videos/center-stage.mp4`} 
                 muted 
                 loop 
                 autoPlay
@@ -41,13 +42,13 @@ function Camera() {
                 className={`controller--play ${isPlaying ? 'hide' : ''}`}
                 onClick={handlePlay}
               >
-                재생 <img src="/images/video-play.svg" alt="Play" />
+                재생 <img src={getImagePath("/images/video-play.svg")} alt="Play" />
               </div>
               <div 
                 className={`controller--pause ${!isPlaying ? 'hide' : ''}`}
                 onClick={handlePause}
               >
-                일시정지 <img src="/images/video-pause.svg" alt="Pause" />
+                일시정지 <img src={getImagePath("/images/video-pause.svg")} alt="Pause" />
               </div>
               <figcaption className="bgtext">센터 스테이지 덕분에 영상 통화도 더 자연스럽게</figcaption>
             </figure>
@@ -68,7 +69,7 @@ function Camera() {
           </div>
           <div className="figures">
             <figure>
-              <img src="/images/camera_edit.jpg" alt="사진 앱에서 편집되고 있는 이미지" />
+              <img src={getImagePath("/images/camera_edit.jpg")} alt="사진 앱에서 편집되고 있는 이미지" />
               <figcaption className="bgtext">사진도 동영상도 찍고 편집하고</figcaption>
             </figure>
           </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { getImagePath } from '../utils/imagePath'
 
 function iPadOS() {
   return (
@@ -17,19 +18,19 @@ function iPadOS() {
         <div className="figures">
           <div className="figure-split-view">
             <figure>
-              <img src="/images/ipados_split_view.png" alt="Split View로 이미지를 편집하면서 Mail 앱을 사용 중인 모습" />
+              <img src={getImagePath("/images/ipados_split_view.png")} alt="Split View로 이미지를 편집하면서 Mail 앱을 사용 중인 모습" />
               <figcaption className="bgtext">두 개의 앱, 서로 양옆에 놓고 쓰기</figcaption>
             </figure>
           </div>
           <div className="figure-widgets">
             <figure>
-              <img src="/images/ipados_widgets.png" alt="홈 화면에 표시된 위젯" />
+              <img src={getImagePath("/images/ipados_widgets.png")} alt="홈 화면에 표시된 위젯" />
               <figcaption className="bgtext">홈 화면에 바로 뜨는 위젯</figcaption>
             </figure>
           </div>
           <div className="figure-quick-note">
             <figure>
-              <img src="/images/ipados_quick_note.png" alt="Safari의 빠른 메모" />
+              <img src={getImagePath("/images/ipados_quick_note.png")} alt="Safari의 빠른 메모" />
               <figcaption className="bgtext">어디서나 남기는 빠른 메모</figcaption>
             </figure>
           </div>

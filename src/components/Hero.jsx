@@ -1,4 +1,5 @@
 import React from 'react'
+import { getImagePath } from '../utils/imagePath'
 
 function Hero() {
   return (
@@ -7,7 +8,7 @@ function Hero() {
         <h1 className="bgtext">iPad</h1>
         <div className="figures">
           <figure>
-            <img src="/images/hero_ipad.jpg" alt="iPad와 Smart Keyborad9 및 Apple pencil" />
+            <img src={getImagePath("/images/hero_ipad.jpg")} alt="iPad와 Smart Keyborad9 및 Apple pencil" />
             <figcaption className="bgtext">
               <div className="caption-camera">센터 스테이지 기술이 적용된 새로운 울트라 와이드 전면 카메라</div>
               <div className="caption-chip">A13 BIONIC 칩 전격 탑재</div>

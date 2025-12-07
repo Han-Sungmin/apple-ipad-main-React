@@ -1,5 +1,6 @@
 import React from 'react'
 import ipads from '../data/ipads'
+import { getImagePath } from '../utils/imagePath'
 
 function Compare() {
   return (
@@ -11,7 +12,7 @@ function Compare() {
             {ipads.map((ipad, index) => (
               <div key={index} className="item">
                 <div className="thumbnail">
-                  <img src={ipad.thumbnail} alt={ipad.name} />
+                  <img src={getImagePath(ipad.thumbnail)} alt={ipad.name} />
                 </div>
                 <ul className="colors">
                   {ipad.colors.map((color, colorIndex) => (

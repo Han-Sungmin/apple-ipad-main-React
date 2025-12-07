@@ -1,5 +1,6 @@
 import React from 'react'
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver'
+import { getImagePath } from '../utils/imagePath'
 
 function Info({ icon, children }) {
   const elementRef = useIntersectionObserver()
@@ -20,7 +21,7 @@ function Power() {
           <h1 className="bgtext">거침없는 일 처리 성능</h1>
           <div className="figures">
             <figure>
-              <img src="/images/power_multiple_apps.png" alt="Keynote 마크업과 메세지가 함께 표시된 Split View" />
+              <img src={getImagePath("/images/power_multiple_apps.png")} alt="Keynote 마크업과 메세지가 함께 표시된 Split View" />
               <figcaption className="bgtext">동시에 여러 앱 사용 가능</figcaption>
             </figure>
           </div>
@@ -28,7 +29,7 @@ function Power() {
         <div className="arcade feature">
           <div className="figures">
             <figure>
-              <img src="/images/power_arcade.png" alt="iPad에 WonderBox 앱이 열려 있는 모습" />
+              <img src={getImagePath("/images/power_arcade.png")} alt="iPad에 WonderBox 앱이 열려 있는 모습" />
               <figcaption className="bgtext">신나게 즐기는 새로운 APPLE ARCADE 게임</figcaption>
             </figure>
           </div>
@@ -55,7 +56,7 @@ function Power() {
           </div>
           <div className="figures">
             <figure>
-              <img src="/images/power_create.jpg" alt="Procreat에서 Apple Pencil로 그림이 그려져 있는 모습" />
+              <img src={getImagePath("/images/power_create.jpg")} alt="Procreat에서 Apple Pencil로 그림이 그려져 있는 모습" />
               <figcaption className="bgtext">스케치하고, 그리고, 색칠하고</figcaption>
             </figure>
           </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver'
+import { getImagePath } from '../utils/imagePath'
 
 function Info({ icon, children, link }) {
   const elementRef = useIntersectionObserver()
@@ -20,7 +21,7 @@ function Accessories() {
         <h1 className="bgtext">손으로 쓰거나 키보드로 쓰거나</h1>
         <div className="figures">
           <figure>
-            <img src="/images/accessories.jpg"
+            <img src={getImagePath("/images/accessories.jpg")}
               alt="Smart Keyboard와 Apple Pencil이 갖춰진 iPad에서 Split View로 Mail 앱의 이메일과 메모 앱의 손글씨 필기" />
             <figcaption className="bgtext">
               <div className="caption-memo">이메일도 타이핑 하고 손글씨 메모도 적고</div>

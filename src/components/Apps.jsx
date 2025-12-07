@@ -1,4 +1,5 @@
 import React from 'react'
+import { getImagePath } from '../utils/imagePath'
 
 function Apps() {
   return (
@@ -15,19 +16,19 @@ function Apps() {
         <div className="figures">
           <div className="figure-masterclass">
             <figure>
-              <img src="/images/apps_masterclass.png" alt="iPad에 MasterClass 앱이 열려 있는 모습" />
+              <img src={getImagePath("/images/apps_masterclass.png")} alt="iPad에 MasterClass 앱이 열려 있는 모습" />
               <figcaption className="bgtext">Masterclass</figcaption>
             </figure>
           </div>
           <div className="figure-adobe">
             <figure>
-              <img src="/images/apps_adobe.png" alt="iPad에 Adobe Fresco 앱이 열려 있는 모습" />
+              <img src={getImagePath("/images/apps_adobe.png")} alt="iPad에 Adobe Fresco 앱이 열려 있는 모습" />
               <figcaption className="bgtext">Adobe Fresco</figcaption>
             </figure>
           </div>
           <div className="figure-fantasian">
             <figure>
-              <img src="/images/apps_fantasian.png" alt="iPad에 Fantasian 앱이 열려 있는 모습" />
+              <img src={getImagePath("/images/apps_fantasian.png")} alt="iPad에 Fantasian 앱이 열려 있는 모습" />
               <figcaption className="bgtext">Fantasian</figcaption>
             </figure>
           </div>
@@ -35,13 +36,13 @@ function Apps() {
         <div className="figures">
           <div className="figure-books">
             <figure>
-              <img src="/images/apps_books.png" alt="iPad에 도서 앱이 열려 있는 모습" />
+              <img src={getImagePath("/images/apps_books.png")} alt="iPad에 도서 앱이 열려 있는 모습" />
               <figcaption className="bgtext">도서 앱</figcaption>
             </figure>
           </div>
           <div className="figure-goodnotes">
             <figure>
-              <img src="/images/apps_goodnotes.png" alt="iPad에 Goodnotes 5 앱이 열려 있는 모습" />
+              <img src={getImagePath("/images/apps_goodnotes.png")} alt="iPad에 Goodnotes 5 앱이 열려 있는 모습" />
               <figcaption className="bgtext">GoodNotes 5</figcaption>
             </figure>
           </div>
